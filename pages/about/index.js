@@ -10,10 +10,10 @@ import {
 export default function About() {
   return (
     <main>
-      <div className="flex flex-col items-center justify-center p-4 mt-5">
+      <div className="flex flex-col items-center justify-center p-20 mt-5">
         <h1 className="mb-4 text-4xl font-bold text-base-500">關於我們</h1>
         <div className="grid grid-cols-2 gap-4 mt-5">
-          <div className="relative flex flex-col items-center p-8 rounded-lg shadow-md bg-base-300">
+          <div className="relative flex flex-col items-center p-8 transition duration-500 ease-in-out transform rounded-lg shadow-md bg-base-300 hover:scale-105">
             <Image
               src="/images/haco.png"
               alt="Haco"
@@ -34,6 +34,9 @@ export default function About() {
                 <FaGlobe className="mr-4 text-3xl text-base-500" />
               </p>
               <p className="hover:cursor-pointer">
+                <FaEnvelope className="mr-4 text-3xl text-base-500" />
+              </p>
+              <p className="hover:cursor-pointer">
                 <FaGithub className="mr-4 text-3xl text-base-500" />
               </p>
               <p className="hover:cursor-pointer">
@@ -47,7 +50,7 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="relative flex flex-col items-center p-8 rounded-lg shadow-md bg-base-300">
+          <div className="relative flex flex-col items-center p-8 transition duration-500 ease-in-out transform rounded-lg shadow-md bg-base-300 hover:scale-105">
             <Image
               src="/images/lazp.png"
               alt="Lazp"
@@ -65,6 +68,9 @@ export default function About() {
             <div className="absolute bottom-0 flex flex-wrap items-center mb-8">
               <p className="hover:cursor-pointer">
                 <FaGlobe className="mr-4 text-3xl text-base-500" />
+              </p>
+              <p className="hover:cursor-pointer">
+                <FaEnvelope className="mr-4 text-3xl text-base-500" />
               </p>
               <p className="hover:cursor-pointer">
                 <FaGithub className="mr-4 text-3xl text-base-500" />
