@@ -1,10 +1,17 @@
+import { useRouter } from "next/router";
 import Image from "next/image";
 
 export default function Navbar() {
+  const router = useRouter();
   return (
     <div className="navbar bg-base-300">
       <div className="flex-1">
-        <a className="text-xl normal-case btn btn-ghost">LAZCO</a>
+        <a
+          className="text-xl normal-case btn btn-ghost"
+          onClick={() => router.push("/")}
+        >
+          LAZCO
+        </a>
       </div>
       <div className="flex-none">
         <ul className="px-1 menu menu-horizontal">
@@ -28,7 +35,7 @@ export default function Navbar() {
             </ul>
           </li>
           <li>
-            <p>關於我們</p>
+            <p onClick={() => router.push("/about")}>關於我們</p>
           </li>
           <li>
             <p>聯絡我們</p>

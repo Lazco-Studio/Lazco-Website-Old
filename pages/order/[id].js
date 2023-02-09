@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 import React from "react";
 
-export default function Home() {
+export default function OrderID() {
   const router = useRouter();
   const [percent, setPercent] = React.useState(0);
   React.useEffect(() => {
@@ -21,9 +22,11 @@ export default function Home() {
           <div class="bg-gray-200 dark:bg-gray-700 h-1 flex items-center justify-between">
             <div class="w-1/3 bg-indigo-700 h-1 flex items-center">
               <div class="bg-indigo-700 h-6 w-6 rounded-full shadow flex items-center justify-center">
-                <img
+                <Image
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/thin_with_steps-svg1.svg"
                   alt="check"
+                  width={24}
+                  height={24}
                 />
               </div>
             </div>
