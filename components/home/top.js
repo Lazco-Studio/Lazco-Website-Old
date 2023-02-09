@@ -10,9 +10,9 @@ export default function Top() {
         <h2 className="text-gray text-2xl font-thin mt-2 max-[600px]:text-xl">
           提供網頁設計，開發，與架設服務
         </h2>
-        <a href="#" className="">
+        <p>
           <button className="mt-4 btn btn-primary btn-outline">立即詢問</button>
-        </a>
+        </p>
       </div>
     </div>
   );
