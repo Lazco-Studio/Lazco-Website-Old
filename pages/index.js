@@ -1,14 +1,9 @@
-import Head from "next/head";
+import Top from "@/components/home/top";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Lazco Team</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>Nothing Here</main>
+      <Top></Top>
     </>
   );
 }
