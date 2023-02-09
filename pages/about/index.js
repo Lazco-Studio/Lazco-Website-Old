@@ -30,19 +30,19 @@ export default function About() {
               我很喜歡交朋友也歡迎大寄來我的社群找我喔！對了我也很喜歡出去玩或是參加各種活動，運氣好的話說不定還能遇到我喔！
             </p>
             <div className="absolute bottom-0 flex flex-wrap mb-8">
-              <p>
+              <p className="hover:cursor-pointer">
                 <FaGlobe className="mr-4 text-3xl text-base-500" />
               </p>
-              <p>
+              <p className="hover:cursor-pointer">
                 <FaGithub className="mr-4 text-3xl text-base-500" />
               </p>
-              <p>
+              <p className="hover:cursor-pointer">
                 <FaInstagram className="mr-4 text-3xl text-base-500" />
               </p>
-              <p>
+              <p className="hover:cursor-pointer">
                 <FaYoutube className="mr-4 text-3xl text-base-500" />
               </p>
-              <p>
+              <p className="hover:cursor-pointer">
                 <FaDiscord className="mr-4 text-3xl text-base-500" />
               </p>
             </div>
@@ -63,19 +63,19 @@ export default function About() {
               和SQL/NoSQL。我是一個自我激勵的人，總是尋找新的挑戰和機會，作為開發者成長。我對我的能力提供高質量的結果有信心，並且始終渴望學習和擴展我的技能集。
             </p>
             <div className="absolute bottom-0 flex flex-wrap items-center mb-8">
-              <p>
+              <p className="hover:cursor-pointer">
                 <FaGlobe className="mr-4 text-3xl text-base-500" />
               </p>
-              <p>
+              <p className="hover:cursor-pointer">
                 <FaGithub className="mr-4 text-3xl text-base-500" />
               </p>
-              <p>
+              <p className="hover:cursor-pointer">
                 <FaInstagram className="mr-4 text-3xl text-base-500" />
               </p>
-              <p>
+              <p className="hover:cursor-pointer">
                 <FaYoutube className="mr-4 text-3xl text-base-500" />
               </p>
-              <p>
+              <p className="hover:cursor-pointer">
                 <FaDiscord className="mr-4 text-3xl text-base-500" />
               </p>
             </div>
