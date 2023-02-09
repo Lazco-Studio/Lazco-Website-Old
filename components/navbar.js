@@ -1,4 +1,5 @@
-import { Menu } from "@headlessui/react";
+import Image from "next/image";
+
 export default function Navbar() {
   return (
     <div className="navbar bg-base-300">
@@ -7,12 +8,9 @@ export default function Navbar() {
       </div>
       <div className="flex-none">
         <ul className="px-1 menu menu-horizontal">
-          <li>
-            <a>Item 1</a>
-          </li>
           <li tabIndex={0}>
-            <a>
-              Parent
+            <p>
+              服務項目
               <svg
                 className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
@@ -22,18 +20,18 @@ export default function Navbar() {
               >
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
-            </a>
+            </p>
             <ul className="p-2 mt-3 bg-base-300">
               <li>
-                <a>Submenu 1</a>
-              </li>
-              <li>
-                <a>Submenu 2</a>
+                <p>網站製作</p>
               </li>
             </ul>
           </li>
           <li>
-            <a>Item 3</a>
+            <p>關於我們</p>
+          </li>
+          <li>
+            <p>聯絡我們</p>
           </li>
         </ul>
       </div>
@@ -74,7 +72,12 @@ export default function Navbar() {
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src="/images/default-avatar.png" />
+              <Image
+                src="/images/default-avatar.png"
+                alt="user-avatar"
+                width={40}
+                height={40}
+              />
             </div>
           </label>
           <ul
