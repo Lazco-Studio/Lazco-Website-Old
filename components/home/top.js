@@ -1,4 +1,6 @@
+import { useRouter } from "next/router";
 export default function Top() {
+  const router = useRouter();
   return (
     <div className="relative top h-[640px]">
       <div className="bg-cover bg-center h-[640px] bg-[url('/images/home-bg.png')]"></div>
@@ -11,7 +13,12 @@ export default function Top() {
           提供網頁設計，開發，與架設服務
         </h2>
         <p>
-          <button className="mt-4 btn btn-primary btn-outline">立即詢問</button>
+          <button
+            className="mt-4 btn btn-primary btn-outline"
+            onClick={() => router.push("/contact")}
+          >
+            立即詢問
+          </button>
         </p>
       </div>
     </div>
