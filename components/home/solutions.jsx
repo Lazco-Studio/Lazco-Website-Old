@@ -2,12 +2,12 @@ import { useRouter } from "next/router";
 export default function Solutions() {
   const router = useRouter();
   return (
-    <div className="flex flex-col items-center w-full px-3 py-20 solutions bg-neutral">
+    <div className="flex flex-col items-center w-full px-3 py-20 solutions bg-base-300">
       <h1 className="text-4xl text-center font-bold max-[640px]:text-3xl">
         解決方案
       </h1>
-      <div className="flex flex-wrap items-center justify-center gap-10 p-3 mt-10 list">
-        <div className="card w-[375px] bg-base-100 shadow-xl image-full max-[600px]:w-[80vw]">
+      <div className="flex flex-wrap items-center justify-center gap-6 px-2 mt-10 list">
+        <div className="card w-[375px] bg-base-100 shadow-xl image-full max-[600px]:w-[80vw] transition duration-500 ease-in-out transform hover:scale-110">
           <figure>
             <img src="/images/develop.jpg" alt="develop" />
           </figure>
@@ -24,7 +24,7 @@ export default function Solutions() {
             </div>
           </div>
         </div>
-        <div className="card w-[375px] bg-base-100 shadow-xl image-full max-[600px]:w-[80vw]">
+        <div className="card w-[375px] bg-base-100 shadow-xl image-full max-[600px]:w-[80vw] transition duration-500 ease-in-out transform hover:scale-110">
           <figure>
             <img src="/images/adviser.jpg" alt="adviser" />
           </figure>
@@ -41,7 +41,7 @@ export default function Solutions() {
             </div>
           </div>
         </div>
-        <div className="card w-[375px] bg-base-100 shadow-xl image-full max-[600px]:w-[80vw]">
+        <div className="card w-[375px] bg-base-100 shadow-xl image-full max-[600px]:w-[80vw] transition duration-500 ease-in-out transform hover:scale-110">
           <figure>
             <img src="/images/support.jpg" alt="support" />
           </figure>
