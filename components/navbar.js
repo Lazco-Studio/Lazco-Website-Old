@@ -66,7 +66,7 @@ export default function Navbar() {
           <li tabIndex={0}>
             <span>服務項目</span>
             <ul className="p-2 rounded-box bg-base-200">
-              <li>
+              <li className="fixed top-2 right-52 bg-base-200">
                 <a>網頁開發</a>
               </li>
             </ul>
