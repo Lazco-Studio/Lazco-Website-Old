@@ -38,7 +38,7 @@ export default function Navbar() {
             <p onClick={() => router.push("/about")}>關於我們</p>
           </li>
           <li>
-            <p>聯絡我們</p>
+            <p onClick={() => router.push("/contact")}>聯絡我們</p>
           </li>
         </ul>
       </div>
