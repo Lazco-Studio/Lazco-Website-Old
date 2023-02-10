@@ -79,7 +79,7 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="flex-none">
+      {/* <div className="flex-none">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <div className="indicator">
@@ -100,7 +100,7 @@ export default function Navbar() {
               <span className="badge badge-sm indicator-item">8</span>
             </div>
           </label>
-          <div
+           <div
             tabIndex={0}
             className="mt-3 shadow card card-compact dropdown-content w-52 bg-base-300"
           >
@@ -142,7 +142,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
