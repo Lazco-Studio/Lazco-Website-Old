@@ -18,13 +18,13 @@ export default function Contact() {
             />
           </div>
           <div className="mb-5">
-            <label htmlFor="email" className="flex text-lg text-base-500">
+            <label htmlFor="mail" className="flex text-lg text-base-500">
               電子郵件<p className="text-red-500">*</p>
             </label>
             <input
               type="email"
-              id="email"
-              name="email"
+              id="mail"
+              name="mail"
               required
               className="w-full p-2 text-lg bg-gray-600 border rounded-lg text-base-500 border-base-500"
             />
