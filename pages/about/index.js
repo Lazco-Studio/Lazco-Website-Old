@@ -27,7 +27,7 @@ export default function About() {
               團隊的創始人，我在前端和後端開發方面都有豐富的經驗，並且熟練操作包括
               JavaScript、Python、PHP、Visual Basic 和 React.js
               等多種程式語言。憑藉著對網頁開發的熱情和技能，我有信心能夠創造出具有創新性和動感的網站和應用程式，為所有人帶來出色的體驗，
-              我很喜歡交朋友也歡迎大寄來我的社群找我喔！對了我也很喜歡出去玩或是參加各種活動，運氣好的話說不定還能遇到我喔！
+              我很喜歡交朋友也歡迎大家來我的社群找我喔！對了我也很喜歡出去玩或是參加各種活動，運氣好的話說不定還能遇到我喔！
             </p>
             <div className="absolute bottom-0 flex flex-wrap items-center mb-8 text-center">
               <p className="hover:cursor-pointer">
