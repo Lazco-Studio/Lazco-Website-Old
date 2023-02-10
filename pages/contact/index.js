@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Contact() {
   return (
-    <main className="mt-10">
+    <main className="my-10">
       <h1 className="mb-6 text-4xl font-medium text-center">聯絡我們</h1>
       <div className="flex items-center justify-center">
         <form className="w-3/4 p-10 rounded-lg shadow-xl bg-base-300">
