@@ -6,12 +6,12 @@ export default function Navbar() {
   return (
     <div className="navbar bg-base-300">
       <div className="flex-1">
-        <a
+        <p
           className="text-xl normal-case btn btn-ghost"
           onClick={() => router.push("/")}
         >
           LAZCO
-        </a>
+        </p>
       </div>
       <div className="flex-none max-[640px]:hidden">
         <ul className="px-1 menu menu-horizontal">
@@ -46,7 +46,7 @@ export default function Navbar() {
         <label tabIndex={0} className="btn btn-ghost btn-circle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="w-5 h-5"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -61,11 +61,11 @@ export default function Navbar() {
         </label>
         <ul
           tabIndex={0}
-          className="menu  dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          className="p-2 mt-3 shadow-2xl menu dropdown-content bg-base-200 rounded-box w-52"
         >
           <li tabIndex={0}>
             <span>服務項目</span>
-            <ul className="rounded-box p-2 bg-base-100">
+            <ul className="p-2 rounded-box bg-base-200">
               <li>
                 <a>網頁開發</a>
               </li>
