@@ -30,21 +30,41 @@ export default function About() {
               我很喜歡交朋友也歡迎大家來我的社群找我喔！對了我也很喜歡出去玩或是參加各種活動，運氣好的話說不定還能遇到我喔！
             </p>
             <div className="absolute bottom-0 flex flex-wrap items-center mb-8 text-center">
-              <p className="hover:cursor-pointer">
+              <a
+                className="hover:cursor-pointer"
+                href="https://www.haco.tw"
+                target={"__blank"}
+              >
                 <FaGlobe className="ml-4 mr-4 text-3xl text-base-500" />
-              </p>
-              <p className="hover:cursor-pointer">
+              </a>
+              <a
+                className="hover:cursor-pointer"
+                href="mailto:jasonytonlinecomeandsee@gmail.com"
+                target={"__blank"}
+              >
                 <FaEnvelope className="mr-4 text-3xl text-base-500" />
-              </p>
-              <p className="hover:cursor-pointer">
+              </a>
+              <a
+                className="hover:cursor-pointer"
+                href="https://github.com/mrhaco"
+                target={"__blank"}
+              >
                 <FaGithub className="mr-2 text-3xl text-base-500" />
-              </p>
-              <p className="hover:cursor-pointer">
+              </a>
+              <a
+                className="hover:cursor-pointer"
+                href="https://www.instagram.com/jason_lin_0222/"
+                target={"__blank"}
+              >
                 <FaInstagram className="ml-2 text-3xl text-base-500" />
-              </p>
-              <p className="hover:cursor-pointer">
+              </a>
+              <a
+                className="hover:cursor-pointer"
+                href="http://discord.com/users/508964901415550976"
+                target={"__blank"}
+              >
                 <FaDiscord className="ml-4 mr-4 text-3xl text-base-500" />
-              </p>
+              </a>
             </div>
           </div>
           <div className="relative flex flex-col items-center p-8 transition duration-500 ease-in-out transform rounded-lg shadow-md bg-base-300 hover:scale-105">
@@ -63,21 +83,41 @@ export default function About() {
               和SQL/NoSQL。我是一個自我激勵的人，總是尋找新的挑戰和機會，作為開發者成長。我對我的能力提供高質量的結果有信心，並且始終渴望學習和擴展我的技能集。
             </p>
             <div className="absolute bottom-0 flex flex-wrap items-center mb-8 text-center">
-              <p className="hover:cursor-pointer">
+              <a
+                className="hover:cursor-pointer"
+                href="https://banahaker.github.io/"
+                target={"__blank"}
+              >
                 <FaGlobe className="ml-4 mr-4 text-3xl text-base-500" />
-              </p>
-              <p className="hover:cursor-pointer">
+              </a>
+              <a
+                className="hover:cursor-pointer"
+                href="mailto:lazpytb@gmail.com"
+                target={"__blank"}
+              >
                 <FaEnvelope className="mr-4 text-3xl text-base-500" />
-              </p>
-              <p className="hover:cursor-pointer">
+              </a>
+              <a
+                className="hover:cursor-pointer"
+                href="https://github.com/banahaker"
+                target={"__blank"}
+              >
                 <FaGithub className="mr-2 text-3xl text-base-500" />
-              </p>
-              <p className="hover:cursor-pointer">
+              </a>
+              <a
+                className="hover:cursor-pointer"
+                href="https://www.instagram.com/pn0818x/"
+                target={"__blank"}
+              >
                 <FaInstagram className="ml-2 text-3xl text-base-500" />
-              </p>
-              <p className="hover:cursor-pointer">
+              </a>
+              <a
+                className="hover:cursor-pointer"
+                href="http://discord.com/users/813904269727236108"
+                target={"__blank"}
+              >
                 <FaDiscord className="ml-4 mr-4 text-3xl text-base-500" />
-              </p>
+              </a>
             </div>
           </div>
         </div>
