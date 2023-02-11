@@ -10,7 +10,7 @@ import {
 export default function About() {
   return (
     <main>
-      <div className="flex flex-col items-center justify-center p-20 pt-10 max-[600px]:px-5">
+      <div className="flex flex-col items-center justify-start p-20 pt-10 max-[600px]:px-5 min-h-[calc(100vh-154px)]">
         <h1 className="mb-6 text-4xl font-bold text-base-500">關於我們</h1>
         <div className="grid grid-cols-2 gap-20 mt-5 max-[1200px]:flex max-[1200px]:flex-wrap">
           <div className="relative flex flex-col items-center p-8 transition duration-500 ease-in-out transform rounded-lg shadow-md bg-base-300 hover:scale-105">
