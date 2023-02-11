@@ -1,9 +1,11 @@
 export default function Footer() {
   return (
-    <div className="footer h-[80px]">
-      <span className="m-auto text-xl font-thin">
-        Copyright © 2022 Lazco Team All rights reserved.
-      </span>
-    </div>
+    <>
+      <footer className="footer footer-center p-10 bg-base-300 text-base-content text-lg">
+        <div>
+          <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
+      </footer>
+    </>
   );
 }
