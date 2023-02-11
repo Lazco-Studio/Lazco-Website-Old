@@ -5,7 +5,7 @@ export default function Top() {
     <div className="relative top h-[640px]">
       <div className="bg-cover bg-center h-[640px] bg-[url('/images/home-bg.png')]"></div>
       <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
-      <div className="absolute inset-0 p-2 content h-full max-w-[640px] m-auto flex flex-col justify-center items-start text-center	 max-[600px]:items-center max-[770px]:ml-14">
+      <div className="absolute inset-0 p-2 content h-full max-w-[640px] m-auto flex flex-col justify-center items-start text-center	 max-[600px]:items-center">
         <h1 className="text-white text-4xl font-bold max-[600px]:text-3xl">
           規劃。開發。提供數位解決方案
         </h1>
