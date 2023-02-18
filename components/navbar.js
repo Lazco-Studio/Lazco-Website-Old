@@ -10,7 +10,7 @@ export default function Navbar() {
           className="text-xl normal-case btn btn-ghost"
           onClick={() => router.push("/")}
         >
-          LAZCO
+          <img src="/images/logo-long.png" width={128} />
         </p>
       </div>
       <div className="flex-none max-[640px]:hidden">

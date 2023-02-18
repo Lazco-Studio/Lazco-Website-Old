@@ -13,14 +13,14 @@ export default function Document() {
         <meta property="og:url" content="https://www.lazco.dev/" />
         <meta property="og:title" content="Lazco Team" />
         <meta property="og:description" content="" />
-        <meta property="og:image" content="/banner.png" />
+        <meta property="og:image" content="/images/banner.png" />
 
         {/*<!-- Twitter -->*/}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.lazco.dev/" />
         <meta property="twitter:title" content="Lazco Team" />
         <meta property="twitter:description" content="" />
-        <meta property="twitter:image" content="/banner.png" />
+        <meta property="twitter:image" content="/images/banner.png" />
       </Head>
       <body>
         <Main />
