@@ -8,18 +8,18 @@ export default async function Contact(req, res) {
       res.status(200).json({ code: 400, message: "400: Invalid Form Body" });
     } else {
       let data = JSON.stringify({
-        username: body.discord ? body.discord : "無",
+        username: body.name ? body.name : "無",
         embeds: [
           {
             color: 0xfd0000,
             fields: [
               {
                 name: `電子郵件`,
-                value: body.discord ? body.discord : "無",
+                value: body.mail ? body.mail : "無",
               },
               {
                 name: `連絡電話`,
-                value: body.discord ? body.discord : "無",
+                value: body.phone ? body.phone : "無",
               },
               {
                 name: `Discord`,
@@ -27,7 +27,7 @@ export default async function Contact(req, res) {
               },
               {
                 name: `message`,
-                value: "```\n" + (body.discord ? body.discord : "無") + "\n```",
+                value: "```\n" + (body.message ? body.message : "無") + "\n```",
               },
             ],
           },
