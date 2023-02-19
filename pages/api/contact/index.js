@@ -43,11 +43,12 @@ export default async function Contact(req, res) {
         axios(config);
         res.status(201).json({ message: "201 Success Send Contact Info" });
       } catch (e) {
+        console.log(data);
         console.log(e);
-        res.status(500).json({ message: "500 Something Going Error" });
+        res.status(200).json({ message: "500 Something Going Error" });
       }
     }
   } else {
-    res.status(405).json({ message: "405: Method Not Allow" });
+    res.status(200).json({ message: "405: Method Not Allow" });
   }
 }
