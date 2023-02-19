@@ -10,7 +10,7 @@ export default function Navbar() {
           className="text-xl normal-case btn btn-ghost"
           onClick={() => router.push("/")}
         >
-          <img src="/images/logo-long.png" width={128} />
+          <img src="/images/logo-long.png" width={128} alt="LOGO" />
         </p>
       </div>
       <div className="flex-none max-[640px]:hidden">
@@ -67,7 +67,7 @@ export default function Navbar() {
             <span>服務項目</span>
             <ul className="p-2 rounded-box bg-base-200">
               <li className="fixed top-2 right-52 bg-base-200">
-                <a>網頁開發</a>
+                <p>網頁開發</p>
               </li>
             </ul>
           </li>
