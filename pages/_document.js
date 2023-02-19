@@ -7,7 +7,6 @@ export default function Document() {
         {/*<!-- Primary Meta Tags -->*/}
         <meta name="title" content="Lazco Team" />
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
 
         {/*<!-- Open Graph / Facebook -->*/}
