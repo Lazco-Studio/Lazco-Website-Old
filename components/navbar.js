@@ -1,85 +1,84 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Navbar() {
-  const router = useRouter();
-  return (
-    <div className="navbar bg-base-300">
-      <div className="flex-1">
-        <p
-          className="text-xl normal-case btn btn-ghost"
-          onClick={() => router.push("/")}
-        >
-          <img src="/images/logo-long.png" width={128} alt="LOGO" />
-        </p>
-      </div>
-      <div className="flex-none max-[640px]:hidden">
-        <ul className="px-1 menu menu-horizontal">
-          <li tabIndex={0} className="dropdown">
-            <p>
-              服務項目
-              <svg
-                className="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-              </svg>
-            </p>
-            <ul className="p-2 mt-3 bg-base-300 dropdown-content">
-              <li>
-                <p>網站製作</p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p onClick={() => router.push("/about")}>關於我們</p>
-          </li>
-          <li>
-            <p onClick={() => router.push("/contact")}>聯絡我們</p>
-          </li>
-        </ul>
-      </div>
-      <div className="dropdown dropdown-end min-[640px]:hidden">
-        <label tabIndex={0} className="btn btn-ghost btn-circle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h7"
-            />
-          </svg>
-        </label>
-        <ul
-          tabIndex={0}
-          className="p-2 mt-3 shadow-2xl menu dropdown-content bg-base-200 rounded-box w-52"
-        >
-          <li tabIndex={0}>
-            <span>服務項目</span>
-            <ul className="p-2 rounded-box bg-base-200">
-              <li className="fixed top-2 right-52 bg-base-200">
-                <p>網頁開發</p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p onClick={() => router.push("/about")}>關於我們</p>
-          </li>
-          <li>
-            <p onClick={() => router.push("/contact")}>聯絡我們</p>
-          </li>
-        </ul>
-      </div>
-      {/* <div className="flex-none">
+    const router = useRouter();
+    return (
+        <div className="p-2 bg-base-300 flex items-center pt-[var(--navbar-padding,] pb-[var(--navbar-padding,] min-h-[4rem] w-full justify-between px-[0.5rem)]">
+            <div className="w-fit flex-1">
+                <Link className="btn btn-ghost mx-4 my-0 px-3" href={"/"}>
+                    <Image className="w-32" src="/images/logo-long.png" width={1138} height={372} alt="LOGO" />
+                </Link>
+            </div>
+            <div className="flex-none max-[640px]:hidden">
+                <ul className="px-1 menu menu-horizontal">
+                    <li tabIndex={0} className="dropdown">
+                        <p>
+                            服務項目
+                            <svg
+                                className="fill-current"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </p>
+                        <ul className="p-2 mt-3 bg-base-300 dropdown-content">
+                            <li>
+                                <p>網站製作</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p onClick={() => router.push("/about")}>關於我們</p>
+                    </li>
+                    <li>
+                        <p onClick={() => router.push("/contact")}>聯絡我們</p>
+                    </li>
+                </ul>
+            </div>
+            <div className="dropdown dropdown-end min-[640px]:hidden">
+                <label tabIndex={0} className="btn btn-ghost btn-circle">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-5 h-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M4 6h16M4 12h16M4 18h7"
+                        />
+                    </svg>
+                </label>
+                <ul
+                    tabIndex={0}
+                    className="p-2 mt-3 shadow-2xl menu dropdown-content bg-base-200 rounded-box w-52"
+                >
+                    <li tabIndex={0}>
+                        <span>服務項目</span>
+                        <ul className="p-2 rounded-box bg-base-200">
+                            <li className="fixed top-2 right-52 bg-base-200">
+                                <p>網頁開發</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p onClick={() => router.push("/about")}>關於我們</p>
+                    </li>
+                    <li>
+                        <p onClick={() => router.push("/contact")}>聯絡我們</p>
+                    </li>
+                </ul>
+            </div>
+            {/* <div className="flex-none">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <div className="indicator">
@@ -143,6 +142,6 @@ export default function Navbar() {
           </ul>
         </div>
       </div> */}
-    </div>
-  );
+        </div>
+    );
 }
