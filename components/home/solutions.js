@@ -9,7 +9,7 @@ export default function Solutions() {
       <div className="flex flex-wrap items-center justify-center gap-6 px-2 mt-10 list">
         <div className="card w-[375px] bg-base-100 shadow-xl image-full max-[600px]:w-[80vw] transition duration-500 ease-in-out transform hover:scale-110">
           <figure>
-            <img src="/images/develop.jpg" alt="develop" />
+            <img src="/images/develop.jpg" alt="develop" loading="lazy" />
           </figure>
           <div className="card-body">
             <h2 className="text-2xl text-white card-title">網頁開發</h2>
@@ -26,7 +26,7 @@ export default function Solutions() {
         </div>
         <div className="card w-[375px] bg-base-100 shadow-xl image-full max-[600px]:w-[80vw] transition duration-500 ease-in-out transform hover:scale-110">
           <figure>
-            <img src="/images/adviser.jpg" alt="adviser" />
+            <img src="/images/adviser.jpg" alt="adviser" loading="lazy" />
           </figure>
           <div className="card-body">
             <h2 className="text-2xl text-white card-title">數位顧問</h2>
@@ -43,7 +43,7 @@ export default function Solutions() {
         </div>
         <div className="card w-[375px] bg-base-100 shadow-xl image-full max-[600px]:w-[80vw] transition duration-500 ease-in-out transform hover:scale-110">
           <figure>
-            <img src="/images/support.jpg" alt="support" />
+            <img src="/images/support.jpg" alt="support" loading="lazy" />
           </figure>
           <div className="card-body">
             <h2 className="text-2xl text-white card-title">客戶服務</h2>
