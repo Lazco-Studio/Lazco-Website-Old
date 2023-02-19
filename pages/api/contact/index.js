@@ -8,18 +8,18 @@ export default async function Contact(req, res) {
       res.status(200).json({ code: 400, message: "400: Invalid Form Body" });
     } else {
       let data = JSON.stringify({
-        username: body.name,
+        username: body.discord ? body.discord : "無",
         embeds: [
           {
             color: 0xfd0000,
             fields: [
               {
                 name: `電子郵件`,
-                value: body.mail,
+                value: body.discord ? body.discord : "無",
               },
               {
                 name: `連絡電話`,
-                value: body.phone,
+                value: body.discord ? body.discord : "無",
               },
               {
                 name: `Discord`,
@@ -27,7 +27,7 @@ export default async function Contact(req, res) {
               },
               {
                 name: `message`,
-                value: "```\n" + body.message + "\n```",
+                value: "```\n" + (body.discord ? body.discord : "無") + "\n```",
               },
             ],
           },
@@ -39,8 +39,13 @@ export default async function Contact(req, res) {
         headers: { "Content-Type": "application/json" },
         data: data,
       };
-      axios(config);
-      res.status(201).json({ message: "201 Success Send Contact Info" });
+      try {
+        axios(config);
+        res.status(201).json({ message: "201 Success Send Contact Info" });
+      } catch (e) {
+        console.log(e);
+        res.status(500).json({ message: "500 Something Going Error" });
+      }
     }
   } else {
     res.status(405).json({ message: "405: Method Not Allow" });
