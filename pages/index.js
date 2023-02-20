@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Lazco | Home</title> {/* Haco Team */}
+                <title>Lazco | Home</title> {/* Lazco Team */}
             </Head>
             <main>
                 <Top />

@@ -38,8 +38,7 @@ export default function About() {
                             mail: "mailto:lazpytb@gmail.com",
                             github: "https://github.com/banahaker",
                             instagram: "https://www.instagram.com/pn0818x",
-                            discord: "http://discord.com/users/813904269727236108",
-                            youtube: "test"
+                            discord: "http://discord.com/users/813904269727236108"
                         }}
                     />
                 </div>
