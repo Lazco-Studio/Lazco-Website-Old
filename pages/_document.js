@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="zh-TW">
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         {/*<!-- Primary Meta Tags -->*/}
         <meta name="title" content="Lazco" />
         <meta
