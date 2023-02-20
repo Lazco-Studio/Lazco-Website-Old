@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <div className="p-2 bg-base-300 flex items-center pt-[var(--navbar-padding,] pb-[var(--navbar-padding,] min-h-[4rem] w-full justify-between px-[0.5rem)]">
             <div className="w-fit flex-1">
-                <Link className="btn btn-ghost mx-4 my-0 px-3" href={"/"}>
+                <Link className="btn btn-ghost" href={"/"}>
                     <Image className="w-32" src="/images/logo-long.png" width={1138} height={372} alt="LOGO" />
                 </Link>
             </div>
@@ -34,10 +34,14 @@ export default function Navbar() {
                         </ul>
                     </li>
                     <li>
-                        <p onClick={() => router.push("/about")}>關於我們</p>
+                        <Link href={"/about"}>
+                            關於我們
+                        </Link>
                     </li>
                     <li>
-                        <p onClick={() => router.push("/contact")}>聯絡我們</p>
+                        <Link href={"/contact"}>
+                            聯絡我們
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -71,10 +75,14 @@ export default function Navbar() {
                         </ul>
                     </li>
                     <li>
-                        <p onClick={() => router.push("/about")}>關於我們</p>
+                        <Link href={"/about"}>
+                            關於我們
+                        </Link>
                     </li>
                     <li>
-                        <p onClick={() => router.push("/contact")}>聯絡我們</p>
+                        <Link href={"/contact"}>
+                            聯絡我們
+                        </Link>
                     </li>
                 </ul>
             </div>
