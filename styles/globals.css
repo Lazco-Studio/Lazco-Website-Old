@@ -157,3 +157,7 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
     display: none;
 }
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
