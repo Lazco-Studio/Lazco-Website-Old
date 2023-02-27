@@ -2,53 +2,66 @@
 const axios = require("axios");
 
 export default async function Contact(req, res) {
-  if (req.method === "POST") {
-    const body = req.body;
-    if (!body.name || !body.mail || !body.phone || !body.message) {
-      res.status(200).json({ code: 400, message: "400: Invalid Form Body" });
-    } else {
-      let data = JSON.stringify({
-        username: body.name ? body.name : "無",
-        embeds: [
-          {
-            color: 0xfd0000,
-            fields: [
-              {
-                name: `電子郵件`,
-                value: body.mail ? body.mail : "無",
-              },
-              {
-                name: `連絡電話`,
-                value: body.phone ? body.phone : "無",
-              },
-              {
-                name: `Discord`,
-                value: body.discord ? body.discord : "無",
-              },
-              {
-                name: `message`,
-                value: "```\n" + (body.message ? body.message : "無") + "\n```",
-              },
+    if (req.method === "POST") {
+        // Check for required body
+        const RequiredBody = ["name", "mail", "phone", "message", "discord"];
+        const hasAllRequiredBody = RequiredBody.every(item => Object.keys(req.body).includes(item));
+        if (!hasAllRequiredBody || Object.keys(req.body).length < RequiredBody.length) {
+            return res.status(400).json(`The following items are all required for this route : [${RequiredBody.join(", ")}]`);
+        }
+        else if (Object.keys(req.body).length > RequiredBody.length) {
+            return res.status(400).json(`Only allowed ${RequiredBody.length} items in the body : [${RequiredBody.join(", ")}]`);
+        }
+
+        const body = req.body;
+        const data = JSON.stringify({
+            username: body.name || "無",
+            embeds: [
+                {
+                    color: 0xfd0000,
+                    fields: [
+                        {
+                            name: "電子郵件",
+                            value: body.mail || "無",
+                        },
+                        {
+                            name: "連絡電話",
+                            value: body.phone || "無",
+                        },
+                        {
+                            name: "Discord",
+                            value: body.discord || "無",
+                        },
+                        {
+                            name: "Message",
+                            value: "```\n" + (body.message || "無") + "\n```",
+                        },
+                    ],
+                },
             ],
-          },
-        ],
-      });
-      var config = {
-        method: "POST",
-        url: "https://canary.discord.com/api/webhooks/1073582657360900186/0l8jFuZj43oVN14GtVAql-Rc2uUIuXOjkqKbmQ_OAOz02z3Kg8LwnjSPBjtpJ3-Uda4P",
-        headers: { "Content-Type": "application/json" },
-        data: data,
-      };
-      try {
-        axios(config);
-        res.status(201).json({ message: "201 Success Send Contact Info" });
-      } catch (e) {
-        console.log(data);
-        console.log(e);
-        res.status(200).json({ message: "500 Something Going Error" });
-      }
+        });
+        const config = {
+            method: "POST",
+            url: "https://canary.discord.com/api/webhooks/1073582657360900186/0l8jFuZj43oVN14GtVAql-Rc2uUIuXOjkqKbmQ_OAOz02z3Kg8LwnjSPBjtpJ3-Uda4P",
+            headers: { "Content-Type": "application/json" },
+            data: data
+        };
+
+        try {
+            const response = await axios(config);
+            if (response.status === 204) {
+                res.status(201).json({ message: "Successfully Send Contact Info" });
+            }
+            else {
+                throw new Error("Failed to post discord webhook");
+            }
+        }
+        catch (e) {
+            console.log(data);
+            console.log(e);
+            res.status(500).json({ message: "Something Goes Wrong" });
+        }
+    } else {
+        res.status(405).json({ message: "Invalid Request Method" });
     }
-  } else {
-    res.status(200).json({ message: "405: Method Not Allow" });
-  }
 }

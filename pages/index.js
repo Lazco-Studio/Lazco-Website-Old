@@ -1,13 +1,13 @@
-import Service from "@/components/home/service";
-import Solutions from "@/components/home/solutions";
-import Top from "@/components/home/top";
+import Service from "@/components/home/Service";
+import Solutions from "@/components/home/Solutions";
+import Top from "@/components/home/Top";
 
 export default function Home() {
   return (
-    <>
-      <Top></Top>
-      <Service></Service>
-      <Solutions></Solutions>
-    </>
+    <main>
+      <Top />
+      <Service />
+      <Solutions />
+    </main>
   );
 }
