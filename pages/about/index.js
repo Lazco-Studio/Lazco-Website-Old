@@ -3,7 +3,7 @@ import Card from "@/components/about/Card";
 export default function About() {
   return (
     <main>
-      <div className="flex flex-col items-center justify-start m-20">
+      <div className="flex flex-col items-center justify-start px-4 py-6">
         <h1 className="mb-6 text-4xl font-bold text-base-500">關於我們</h1>
         <div className="grid grid-cols-2 gap-20 mt-5 max-[1200px]:flex max-[1200px]:flex-wrap justify-center">
           <Card
