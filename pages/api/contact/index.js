@@ -42,7 +42,7 @@ export default async function Contact(req, res) {
         });
         const config = {
             method: "POST",
-            url: "https://canary.discord.com/api/webhooks/1073582657360900186/0l8jFuZj43oVN14GtVAql-Rc2uUIuXOjkqKbmQ_OAOz02z3Kg8LwnjSPBjtpJ3-Uda4P",
+            url: "https://canary.discord.com/api/webhooks/1102594260135575603/n34NNAH33Tp0G7BEc8EDdqLHOQDkw9g_yXSYV-TI3wMjSNW5845gVP0VMBNXwGl_MFu6",
             headers: { "Content-Type": "application/json" },
             data: data
         };
