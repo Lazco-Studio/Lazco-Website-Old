@@ -17,8 +17,8 @@ export default function About() {
             }}
             contact={{
               website: "https://www.haco.tw",
-              mail: "mailto:jasonytonlinecomeandsee@gmail.com",
-              github: "https://github.com/mrhaco",
+              mail: "mailto:haco@lazco.dev",
+              github: "https://github.com/haco8888",
               instagram: "https://www.instagram.com/jason_lin_0222",
               discord: "http://discord.com/users/508964901415550976",
             }}
@@ -33,8 +33,8 @@ export default function About() {
               text: "你好，我的名字是 Lazp。我是一名程式設計師也是是 Lazco 的創辦人，擁有 4 年全端開發的經驗。我在前端和後端技術上都有扎實的基礎，喜歡使用我的技能建立複雜的，可擴展的應用程式。我的專長包括 Vue、React、Golang、C 和 SQL/NoSQL。我是一個自我激勵的人，總是尋找新的挑戰和機會，作為開發者成長。我對我的能力提供高質量的結果有信心，並且始終渴望學習和擴展我的技能集。",
             }}
             contact={{
-              website: "https://banahaker.github.io/",
-              mail: "mailto:lazpytb@gmail.com",
+              website: "https://lazp.tw/",
+              mail: "mailto:lazp@lazco.dev",
               github: "https://github.com/banahaker",
               instagram: "https://www.instagram.com/pn0818x",
               discord: "http://discord.com/users/813904269727236108",
